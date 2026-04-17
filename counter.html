@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imran Web Project</title>
+
+<style>
+    body{
+        background-color: red;
+        transition: 2s;
+    }
+    body:hover{
+        color: yellow;
+    }
+.container h1 {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.btnLine{
+    display: flex;
+ justify-content:center;
+ 
+
+ align-items: center;
+ margin: 5%;
+
+}
+#value{
+    display: flex;
+ justify-content:center;
+ align-items: center;
+ font-size: 5rem;
+ color: teal;
+ transition: 2s;
+    }
+    #value:hover{
+        color: rgb(255, 0, 183);
+        
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1> Counter </h1>
+    <span id="value">0</span>
+    <div class="btnLine" >
+    <button  onclick="dec()"> DECREASE</button>
+    <button  onclick="res()">RESET</button>
+    <button onclick="inc()">INCREASE</button>
+</div>
+</div> 
+
+
+<script>
+
+    let count=0;
+
+    function dec(){
+         count--;
+         document.getElementById("value").innerHTML=count;
+    }
+
+    function res(){
+          count=0;
+          document.getElementById("value").innerHTML=count;
+    }
+    
+    function inc(){
+         count++;
+         document.getElementById("value").innerHTML=count;
+
+    }
+</script>
+</body>
+</html>
